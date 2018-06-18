@@ -1,4 +1,3 @@
-# Copyright (C) 2014 The CyanogenMod Project
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,12 +15,12 @@
 $(call inherit-product, device/LYF/mobee01a/full_mobee01a.mk)
 
 # Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := lluvia_mobee01a
+PRODUCT_NAME := lineage_mobee01a
 BOARD_VENDOR := LYF
 PRODUCT_DEVICE := mobee01a
 
@@ -35,4 +34,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := LYF/LS-5015/LS-5015:6.0.1/MMB29M/434:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Mohd Faraz (AndroiableDroid)"
+    DEVICE_MAINTAINERS="Ashley David"
